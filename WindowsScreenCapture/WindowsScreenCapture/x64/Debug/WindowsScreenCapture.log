@@ -1,0 +1,5 @@
+﻿  EnumWindowsProc.cpp
+  WindowsScreenCapture.cpp
+C:\Users\leo\Desktop\C++Projects\WindowsScreenCapture\WindowsScreenCapture\WindowsScreenCapture.cpp(165,31): warning C4267: '=': conversion from 'size_t' to 'unsigned int', possible loss of data
+  Generating Code...
+  WindowsScreenCapture.vcxproj -> C:\Users\leo\Desktop\C++Projects\WindowsScreenCapture\x64\Debug\WindowsScreenCapture.exe
