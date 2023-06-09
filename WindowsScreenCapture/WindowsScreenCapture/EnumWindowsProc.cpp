@@ -12,6 +12,7 @@ BOOL CALLBACK FilterEnumWindows(HWND CurrentWindow, LPARAM lParam)
 			FilterData->LowerThanMin = true;
             if (FilterData->ExcludeMin) return FALSE;
 		}
+        EnumChildWindows(CurrentWindow, FilterData->ProcPtr, FilterData->lParam);
 		if (!FilterData->ProcPtr(CurrentWindow, FilterData->lParam)) return FALSE;
 	}
 	else if (FilterData->HighestHWND == 0 || FilterData->HighestHWND == CurrentWindow)
@@ -19,6 +20,7 @@ BOOL CALLBACK FilterEnumWindows(HWND CurrentWindow, LPARAM lParam)
 		FilterData->HigherThanMax = false;
         if (!FilterData->ExcludeMax)
         {
+            EnumChildWindows(CurrentWindow, FilterData->ProcPtr, FilterData->lParam);
             if (!FilterData->ProcPtr(CurrentWindow, FilterData->lParam)) return FALSE;
         }
 	}

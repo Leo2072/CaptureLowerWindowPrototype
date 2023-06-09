@@ -1,5 +1,4 @@
 #include "EnumWindowsProcs.h"
-#include <thread>
 
 
 LRESULT CALLBACK WndProc(HWND Window, UINT message, WPARAM wParam, LPARAM lParam);
