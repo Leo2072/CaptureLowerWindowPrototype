@@ -20,16 +20,5 @@ struct FilterProcData
 	bool LowerThanMin = false;
 };
 
-struct GetWndRgnFillData
-{
-	HRGN AvailableRegion;
-	std::vector<HRGN>* TransferRegions;
-	std::vector<HWND>* SourceHWNDs;
-	std::vector<POINT>* Offsets;
-};
-
 
 BOOL CALLBACK FilterEnumWindows(HWND CurrentWindow, LPARAM lParam);
-
-
-BOOL CALLBACK GetLowerWndRgn(HWND CurrentWindow, LPARAM lParam);

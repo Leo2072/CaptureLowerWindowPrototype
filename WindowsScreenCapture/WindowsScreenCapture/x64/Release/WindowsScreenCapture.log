@@ -1,8 +1,10 @@
 ﻿  EnumWindowsProc.cpp
   WindowsScreenCapture.cpp
-C:\Users\leo\Desktop\C++Projects\WindowsScreenCapture\WindowsScreenCapture\WindowsScreenCapture.cpp(164,29): warning C4267: '=': conversion from 'size_t' to 'unsigned int', possible loss of data
+C:\Users\leo\Desktop\C++Projects\WindowsScreenCapture\WindowsScreenCapture\WindowsScreenCapture.cpp(131,29): warning C4244: '=': conversion from 'WPARAM' to 'unsigned short', possible loss of data
+C:\Users\leo\Desktop\C++Projects\WindowsScreenCapture\WindowsScreenCapture\WindowsScreenCapture.cpp(135,43): warning C4244: '-=': conversion from 'LONG' to 'SHORT', possible loss of data
+C:\Users\leo\Desktop\C++Projects\WindowsScreenCapture\WindowsScreenCapture\WindowsScreenCapture.cpp(136,43): warning C4244: '-=': conversion from 'LONG' to 'SHORT', possible loss of data
   Generating code
   Previous IPDB not found, fall back to full compilation.
-  All 212 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+  All 3 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
   Finished generating code
   WindowsScreenCapture.vcxproj -> C:\Users\leo\Desktop\C++Projects\WindowsScreenCapture\x64\Release\WindowsScreenCapture.exe
